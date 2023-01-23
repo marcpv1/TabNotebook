@@ -9,7 +9,7 @@
 
    OpenConnection();
 
-   $sql="SELECT Text FROM Paste WHERE Id=".$tab;
+   $sql="SELECT Text FROM Tab WHERE Id=".$tab;
    $result = mysql_query($sql);
    $row = mysql_fetch_array($result);
    $ret=$row['Text'];

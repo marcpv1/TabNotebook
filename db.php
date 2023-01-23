@@ -13,7 +13,7 @@ function OpenConnection()
     die('Could not connect: ' . mysql_error());
   }
 
-  mysql_select_db('Paste', $con) or die( 'Unable to select database');
+  mysql_select_db($db, $con) or die( 'Unable to select database');
   mysql_query("SET NAMES 'utf8'");
  }
 ?>
